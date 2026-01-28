@@ -1,30 +1,34 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f4f4;
+  background: #f7f7f7;
 }
 
-header {
+.hero {
   background: #2c3e50;
   color: white;
-  padding: 30px;
   text-align: center;
+  padding: 60px 20px;
 }
 
-section {
+.about, .services, .contact {
   background: white;
   margin: 20px;
   padding: 20px;
   border-radius: 6px;
 }
 
-h2 {
-  color: #2c3e50;
+.service-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-footer {
-  background: #222;
-  color: #ccc;
+.service-item {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  flex: 1 1 200px;
   text-align: center;
-  padding: 10px;
 }
