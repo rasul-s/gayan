@@ -1,64 +1,61 @@
-/* පොදු සැකසුම් (General Styles) */
+/* පොදු සැකසුම් */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fcfcfc;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1a1a1a; /* තද අළු/කළු පසුබිම */
+    color: #ffffff;
     margin: 0;
     text-align: center;
 }
 
-/* Header එකේ ලස්සන සහ වර්ණ */
+/* Header එකේ Gold Gradient එක */
 header {
-    background: linear-gradient(to right, #800000, #b22222); /* රතු පැහැති gradient එකක් */
-    color: white;
-    padding: 50px 20px;
+    background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728); /* රන්වන් වර්ණ මිශ්‍රණය */
+    color: #000;
+    padding: 60px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
-.container { width: 90%; margin: auto; padding: 20px; }
+.container { width: 90%; margin: auto; padding: 40px 0; }
 
-/* ඇඳුම් පෙන්වන Grid එක (Items Display Grid) */
+/* ඇඳුම් පෙන්වන Card එක */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+    gap: 30px;
 }
 
-/* ඇඳුමක් පෙන්වන Card එකක හැඩය */
 .card {
-    background: white;
+    background: #262626;
     padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    border: 1px solid #d4af37; /* Gold border */
+    transition: 0.3s;
 }
+
+.card:hover { transform: translateY(-10px); }
 
 .card img {
     width: 100%;
     height: 250px;
-    object-fit: cover; /* Photo එකේ හැඩය නොවෙනස්ව තබා ගැනීමට */
-    border-radius: 8px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.price {
-    color: #b22222;
-    font-size: 20px;
+.price { color: #d4af37; font-size: 22px; font-weight: bold; margin: 10px 0; }
+
+/* WhatsApp Button එක */
+.wa-btn {
+    display: block;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 /* Admin Form එකේ සැකසුම් */
-.admin-section {
-    background: #f1f1f1;
-    padding: 30px;
-    border-radius: 15px;
-    margin-top: 50px;
-}
-
-input { padding: 10px; margin: 10px; width: 250px; border-radius: 5px; border: 1px solid #ccc; }
-
-button {
-    padding: 12px 25px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+.admin-container { padding: 50px; }
+input { padding: 12px; margin: 10px; width: 250px; border-radius: 5px; border: none; }
+.add-btn { padding: 12px 30px; background-color: #d4af37; color: black; border: none; font-weight: bold; cursor: pointer; }
