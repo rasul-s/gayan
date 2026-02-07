@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mage Tailor Shop</title>
+    <title>Ran Huya Premium Tailors</title>
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
 </head>
 <body>
 
-<header>
-    <h1>Mage Mahana Adum Collection</h1>
-</header>
+    <header>
+        <h1>Ran Huya Premium Tailors</h1>
+        <p>ඔබේ සිහිනයට ගැළපෙන මෝස්තර...</p>
+    </header>
 
-<div class="container">
-    <div id="product-grid" class="grid">
-        <div class="card">
-            <img src="https://via.placeholder.com/250" alt="Dress">
-            <h3>Sample Dress</h3>
-            <p class="price">Rs. 2500.00</p>
+    <div class="container">
+        
+        <div id="product-grid" class="grid">
+            </div>
+
+        <hr>
+
+        <div class="admin-section">
+            <h2>ඇඳුම් කළමනාකරණය (Admin Only)</h2>
+            <div class="input-group">
+                <input type="text" id="itemName" placeholder="ඇඳුමේ නම (උදා: Blue Silk Frock)">
+                <input type="number" id="itemPrice" placeholder="මිල (රුපියල්)">
+                <input type="text" id="itemImage" placeholder="Photo එකේ Link එක">
+                <button onclick="uploadToFirebase()">වෙබ් අඩවියට එක් කරන්න</button>
+            </div>
         </div>
     </div>
-</div>
 
+    <script src="script.js"></script>
 </body>
 </html>
