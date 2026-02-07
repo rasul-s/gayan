@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vastra Premium Tailors</title>
+    <title>Vastra Premium Tailors | Custom Tailoring</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
 </head>
 <body>
 
-    <header>
-        <div class="header-overlay">
-            <h1>Vastra Premium Tailors</h1>
-            <p>විශ්වාසනීය මසා නිමවීම්...</p>
+    <nav class="navbar">
+        <div class="logo">VASTRA</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="admin.html">Admin</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>BESPOKE ELEGANCE</h1>
+            <p>ඔබේ සිරුරටම ගැළපෙන, උසස්ම ප්‍රමිතියේ මසා නිමවීම්.</p>
+            <a href="#shop" class="btn-primary">Shop Collection</a>
         </div>
     </header>
 
-    <div class="container">
+    <main class="container" id="shop">
+        <h2 class="section-title">Our Featured Designs</h2>
         <div id="product-grid" class="grid">
             </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vastra Premium Tailors. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
