@@ -1,7 +1,64 @@
-body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #fdf2f8; text-align: center; }
-header { background: #db2777; color: white; padding: 40px 0; }
-.container { width: 90%; margin: 20px auto; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-.card { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-.card img { width: 100%; border-radius: 10px; }
-.price { color: #be185d; font-weight: bold; font-size: 1.2rem; }
+/* පොදු සැකසුම් (General Styles) */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fcfcfc;
+    margin: 0;
+    text-align: center;
+}
+
+/* Header එකේ ලස්සන සහ වර්ණ */
+header {
+    background: linear-gradient(to right, #800000, #b22222); /* රතු පැහැති gradient එකක් */
+    color: white;
+    padding: 50px 20px;
+}
+
+.container { width: 90%; margin: auto; padding: 20px; }
+
+/* ඇඳුම් පෙන්වන Grid එක (Items Display Grid) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* ඇඳුමක් පෙන්වන Card එකක හැඩය */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Photo එකේ හැඩය නොවෙනස්ව තබා ගැනීමට */
+    border-radius: 8px;
+}
+
+.price {
+    color: #b22222;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Admin Form එකේ සැකසුම් */
+.admin-section {
+    background: #f1f1f1;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+input { padding: 10px; margin: 10px; width: 250px; border-radius: 5px; border: 1px solid #ccc; }
+
+button {
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
