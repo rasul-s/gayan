@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - Vastra Tailors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
+</head>
+<body onload="checkPassword()">
+
+    <div id="login-screen" style="padding: 100px;">
+        <h2>Admin Login</h2>
+        <input type="password" id="passInput" placeholder="Password eka gahanna">
+        <button onclick="verify()">Login</button>
+    </div>
+
+    <div id="admin-content" style="display: none;" class="admin-container">
+        <h2 style="color: gold;">ඇඳුම් කළමනාකරණය</h2>
+        <div class="admin-form">
+            <input type="text" id="itemName" placeholder="ඇඳුමේ නම">
+            <input type="number" id="itemPrice" placeholder="මිල (රුපියල්)">
+            <input type="text" id="itemImage" placeholder="Photo එකේ Link එක">
+            <button class="add-btn" onclick="uploadToFirebase()">වෙබ් අඩවියට එක් කරන්න</button>
+        </div>
+        <br>
+        <a href="index.html" style="color: gold;">මුල් පිටුවට යන්න</a>
+        
+        <div id="admin-product-grid" class="grid">
+            </div>
+    </div>
+
+    <script>
+        // Password eka verify karana function eka
+        function verify() {
+            const pw = document.getElementById('passInput').value;
+            if(pw === "1234") { // <--- Oyata oni password eka methanata danna
+                document.getElementById('login-screen').style.display = "none";
+                document.getElementById('admin-content').style.display = "block";
+            } else {
+                alert("Password eka waradiy!");
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
