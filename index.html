@@ -3,35 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ran Huya Premium Tailors</title>
+    <title>Vastra Premium Tailors</title>
     <link rel="stylesheet" href="style.css">
-    
     <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
 </head>
 <body>
 
     <header>
-        <h1>Ran Huya Premium Tailors</h1>
-        <p>ඔබේ සිහිනයට ගැළපෙන මෝස්තර...</p>
+        <div class="header-overlay">
+            <h1>Vastra Premium Tailors</h1>
+            <p>විශ්වාසනීය මසා නිමවීම්...</p>
+        </div>
     </header>
 
     <div class="container">
-        
         <div id="product-grid" class="grid">
             </div>
-
-        <hr>
-
-        <div class="admin-section">
-            <h2>ඇඳුම් කළමනාකරණය (Admin Only)</h2>
-            <div class="input-group">
-                <input type="text" id="itemName" placeholder="ඇඳුමේ නම (උදා: Blue Silk Frock)">
-                <input type="number" id="itemPrice" placeholder="මිල (රුපියල්)">
-                <input type="text" id="itemImage" placeholder="Photo එකේ Link එක">
-                <button onclick="uploadToFirebase()">වෙබ් අඩවියට එක් කරන්න</button>
-            </div>
-        </div>
     </div>
 
     <script src="script.js"></script>
